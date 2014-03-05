@@ -85,18 +85,12 @@ class: middle, center
 #Pirkan opiston elektroniikkakurssi
 ##Materiaalia:
 .quarter[[<img src="kuvia/dropbox.png">](http://goo.gl/nzvzLo)]    
-##Esitys: 
-.grey[(paina nuolinappeja)]
-    
+##Esitys: .grey[(paina nuolinappeja)]
+.grey[tehty [remarkilla](https://github.com/gnab/remark) ]
 ---
 class: otsikkodia, middle
 
 ## **1:**Alku
-    
----
-
-class: center, middle, puoli
-.threequarters[![alt text](kuvia/blink.png)]
 
 ---
 
@@ -114,15 +108,19 @@ class: center, middle
 .fit[![alt text](kuvia/atmega2.png)]
 
 ---
+
+class: center, middle, puoli
+.threequarters[![alt text](kuvia/rgbledi.png)]
+
+---
         
 
 #Asenna nämä:
 
-**Arduino IDE:**     arduino.cc/download
-
-**FTDI – ajuri:**     googlaa “FTDI VCP drivers” > ylin tulos
-
-**Fritzing:**     fritzing.org/download
+[Arduino IDE](http://arduino.cc/en/main/software)  
+[FTDI-ajuri](http://www.ftdichip.com/Drivers/VCP.htm)  
+[Fritzing](http://fritzing.org/download/)  
+[Processing](https://processing.org/download/?processing)
         
 ---
         
@@ -150,14 +148,45 @@ void loop() {
 ```
 
 ---
-        
-# kehitettävää
-        
+
+class: otsikkodia, middle
+
+## **2:**Transistorit
+
+---
+
+class: center, middle
+    
+![alt text](kuvia/TO-92.png)
+
+
+---
+
+![alt text](kuvia/pnp.gif)
+![alt text](kuvia/npn.gif)  
+.right[![alt text](kuvia/transistorit.gif)]
+
+---
+
+Transistorista pitää selvittää:  
+*Virrankesto* ja
+*HFE*  
+
+
+**R1** = jännite / ( tarvittava virta / HFE x 1,3 )  
+**R2** = 10 x R1
+
+---
+
+class: center, middle
+    
+.threequarters[![alt text](kuvia/pnptransistori.png)]
+
 ---
 
 class: otsikkodia, middle
 
-## **2:**Teoriaa
+## **3:**Teoriaa
 
 ---
 
@@ -171,58 +200,14 @@ Ohmin laki: U = I * R
 
 ---
 
-#Vastukset
+#Komponentteja
     
-**Arvoja:** vastus, ohmeja Ω, tehorajoitus (yleensä 0,5W tai 0,25W), toleranssi (yleensä 5% tai 1%)  
-    
-**Tyyppejä:** metalli- ja hiilikalvo, potentiometri, pehmeä potentiometri, joystick, liukupotentiometri, valovastus  
-    
-**Käyttätarkoituksia:** virran rajoittaminen, jännitteenjakaja, pull-up-vastus
-
-.half[![alt text](kuvia/vastus.png)]    
+vastus, kondensaattori, diodi, ledi, transistori, mikropiiri, sulake, oskillaattori  
+  
+anturit, moottorit, näytöt, kaiuttimet
 
 ---
 
-#Diodit
-
-**Arvoja:** forward voltage, breakdown voltage, maksimivirta  
-
-**Tyyppejä:** signaalidiodi, perusdiodi, ledi, schottky-diodi, zenerdiodi, valodiodi  
-
-**Käyttötarkoituksia:** AC > DC, suojaus, flyback-diodi  
-
-.threequarters[![alt text](kuvia/diodi.png)]    
-
----
-
-#Ledit
-
-**Arvoja:** koko, väri, kirkkaus, forward current, forward voltage  
-
-**Tyyppejä:** perusledi, RGB-ledi, vilkkuva, teho, infrapuna, ultravioletti  
-
-**Käyttötarkoituksia:** valaisu, näyttäminen, kaukosäätimet  
-
-.half[![alt text](kuvia/led.png)]
-    
----
-
-#Transistorit
-
-**Arvoja:** tehonkesto, jännitteenkesto, vahvistuskerroin HFE  
-
-**Tyyppejä:** BJT, MOSFET, valotransistori  
-
-**Käyttötarkoituksia:** kytkin, vahvistin, regulaattori, mikropiirit, optinen erotus, kaukosäädin
-    
----
-
-#Mikropiirit
-
-.quarter[![alt text](kuvia/mikropiiri.png)]
-.quarter[![alt text](kuvia/mikropiiri2.png)]
-    
----
 class: center, middle
    
 .threequarters[![alt text](kuvia/pakkaukset.png)]  
@@ -238,36 +223,36 @@ class: center, middle
 .threequarters[![alt text](kuvia/digitaalinen.png)]  
     
 ---
-
-#Anturit
     
----
+#Ostoksia netissä
 
-#Moottorit
+**[Sparkfun](https://www.sparkfun.com/)** ( kauppa, foorumi, learn.sparkfun.com )  
+
+**[Adafruit](http://www.adafruit.com/)** ( kauppa, foorumi, learn.adafruit.com )  
+
+**[Digikey](http://www.digikey.fi/)** ( kauppa )
     
-Tasavirtamoottori, servo, askelmoottori, harjaton moottori
+**[chip_partner](http://stores.ebay.com/Chip-Partner-Store/)** ( kauppa )
+
+**[Pololu](https://www.pololu.com/)** ( kauppa )
+
+**[Dealextreme](http://dx.com/)** ( kauppa )
     
----
-    
-#Virtalähteet
-
-USB, muuntaja, patteri, akku
-
----
-    
-#Paikkoja netissä
-
-**sparkfun.com** ( kauppa, foorumi, learn.sparkfun.com )  
-
-**adafruit.com** ( kauppa, foorumi, learn.adafruit.com )  
-
-**arduino.cc** ( ohjeita, foorumi )  
-
-**digikey.fi** ( kauppa )  
-
-**bildr.org** ( ohjeita )  
 
 ---
+    
+#Muita netissä
+
+**[Arduino](http://arduino.cc/)** ( ohjeita, foorumi )  
+
+**[Bildr](http://bildr.org/)** ( ohjeita )
+    
+**[Instructables](http://www.instructables.com/)** ( ohjeita )
+
+**[Hackaday](http://hackaday.com/)** ( ohjeita )
+
+---
+
 
 #Paikkoja Tampereella
 
@@ -284,7 +269,7 @@ Elektori
 ---
 class: otsikkodia, middle
 
-## **3:**RGB-ledi & lämpömittari
+## **4:**POV ja lämpömittari
 
 ---
 
@@ -307,12 +292,12 @@ class: center, middle
 ---
 class: otsikkodia, middle
 
-## **4:**Sarjaliikenne & kello
+## **5:**Noppa ja sarjaliikenne
 
 ---
 class: otsikkodia, middle
 
-## **5:**Processing
+## **6:**Kaiku ja Processing
 
 ---
     
